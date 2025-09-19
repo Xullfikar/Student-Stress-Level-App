@@ -33,6 +33,45 @@ class UserFactory extends Factory
         ];
     }
 
+    public function admin()
+    {
+        return $this->state(fn(array $attributes) => [
+            'fullName'          => 'Andi Zulfikar',
+            'email'             => 'andi.zulfikar@admin.com',
+            'role'              => 'admin',
+            'status'            => '1',
+            'email_verified_at' => now(),
+            'password'          => static::$password ??= Hash::make('password'),
+            'remember_token'    => Str::random(10),
+        ]);
+    }
+
+    public function teacher()
+    {
+        return $this->state(fn(array $attributes) => [
+            'fullName'          => 'Theresa Adelia Christi',
+            'email'             => 'theresa.adelia@teacher.com',
+            'role'              => 'teacher',
+            'status'            => '1',
+            'email_verified_at' => now(),
+            'password'          => static::$password ??= Hash::make('password'),
+            'remember_token'    => Str::random(10),
+        ]);
+    }
+
+    public function student()
+    {
+        return $this->state(fn(array $attributes) => [
+            'fullName'          => 'Steven Jayadi Wiyanto',
+            'email'             => 'steven.jayadi@student.com',
+            'role'              => 'student',
+            'status'            => '1',
+            'email_verified_at' => now(),
+            'password'          => static::$password ??= Hash::make('password'),
+            'remember_token'    => Str::random(10),
+        ]);
+    }
+
     /**
      * Indicate that the model's email address should be unverified.
      */

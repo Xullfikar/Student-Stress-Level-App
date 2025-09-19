@@ -37,7 +37,7 @@ class StudentDetailFactory extends Factory
 
         return [
             'id_user'                 => User::factory(),
-            'class'                   => fake()->randomElement(['PPTI 22', 'PPTI 21', 'PPTI 20']),
+            'class'                   => fake()->randomElement(['PPTI']),
             'study_hours_per_day'     => $study,
             'sleep_hours_per_day'     => $sleep,
             'extracurricular_hours'   => $extracurricular,

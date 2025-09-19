@@ -197,11 +197,6 @@
                     </div>
                 @endforeach
             </div>
-            <!-- <div class="progress mt-3">
-                <div class="progress-bar" id="scheduleProgress" role="progressbar" style="width: 0%; background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));">
-                    <span id="progressText">0/24 hours</span>
-                </div>
-            </div> -->
             {{ $datas->links() }}
         </div>
     </div>
