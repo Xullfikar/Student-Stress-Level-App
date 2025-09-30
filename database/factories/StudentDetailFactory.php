@@ -44,6 +44,7 @@ class StudentDetailFactory extends Factory
             'physical_activity_hours' => $physical,
             'social_activity_hours'   => $social,
             'gpa'                     => fake()->randomFloat(2, 0, 4),
+            'stress_level'            => fake()->randomElement(['high', 'moderate', 'low']),
         ];
     }
 }

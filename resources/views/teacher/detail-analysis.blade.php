@@ -11,7 +11,7 @@
         <div class="row mb-4">
             <div class="col-md-6">
                 <label for="classFilter" class="form-label">Filter by Class:</label>
-                <select class="form-control" id="classFilter" onchange="filterStudents()">
+                <select class="form-control" id="classFilter" onchange="filterStudents()" style="height: 55px">
                     <option value="">All Classes</option>
                     <option value="10A">10A</option>
                     <option value="10B">10B</option>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-6">
                 <label for="stressFilter" class="form-label">Filter by Stress Level:</label>
-                <select class="form-control" id="stressFilter" onchange="filterStudents()">
+                <select class="form-control" id="stressFilter" onchange="filterStudents()" style="height: 55px">
                     <option value="">All Levels</option>
                     <option value="high">High</option>
                     <option value="moderate">Moderate</option>
